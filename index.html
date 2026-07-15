@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>تاريخ الأردن - الوحدة الأولى | إعداد أستاذ طلحة الخير أبو فضة</title>
+<style>
+:root{--navy:#1a2238;--navy2:#2d1b2e;--amber:#e8a838;--amber2:#f5cb5c;--sand:#f5efe0;--cream:#faf7f0;--petra:#b25c4e;--green:#2d8659;--red:#c0392b;--td:#2c2c2c;--tm:#555;--tl:#888;--sd:#ebe0c8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','Noto Sans Arabic','Damascus',sans-serif;background:var(--sand);color:var(--td);-webkit-font-smoothing:antialiased;line-height:1.6}
+.app{max-width:760px;margin:0 auto;padding:0 12px 40px;min-height:100dvh}
+.hero{position:relative;background:linear-gradient(135deg,#1a2238 0%,#2d1b2e 50%,#1a2238 100%);border-radius:20px 20px 0 0;padding:50px 24px 40px;text-align:center;overflow:hidden;margin-top:16px}
+.hero-pattern{position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(232,168,56,.04) 20px,rgba(232,168,56,.04) 22px),repeating-linear-gradient(-45deg,transparent,transparent 20px,rgba(232,168,56,.04) 20px,rgba(232,168,56,.04) 22px);pointer-events:none}
+.hero-content{position:relative;z-index:1}
+.hero-badge{display:inline-block;background:rgba(232,168,56,.15);border:1px solid rgba(232,168,56,.35);color:var(--amber2);padding:5px 18px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:18px}
+.hero-title{font-size:38px;font-weight:800;color:#fff;margin-bottom:4px}
+.hero-subtitle{font-size:22px;font-weight:600;color:var(--amber);margin-bottom:14px}
+.hero-divider{width:60px;height:3px;background:linear-gradient(90deg,transparent,var(--amber),transparent);margin:0 auto 16px}
+.hero-desc{color:rgba(255,255,255,.8);font-size:14px;line-height:1.7;max-width:480px;margin:0 auto 16px}
+.hero-teacher{color:var(--amber2);font-size:16px;font-weight:700;padding:8px 20px;background:rgba(232,168,56,.1);border-radius:12px;display:inline-block}
+.info-cards{display:flex;gap:10px;padding:20px;background:var(--cream);border-bottom:1px solid var(--sd)}
+.info-card{flex:1;text-align:center;padding:16px 8px;background:#fff;border-radius:12px;border:1px solid var(--sd)}
+.info-num{font-size:26px;font-weight:800;color:var(--navy)}
+.info-label{font-size:11px;color:var(--tl);margin-top:2px}
+.form-card{background:#fff;padding:28px 24px;border-radius:0 0 20px 20px;box-shadow:0 8px 28px rgba(0,0,0,.08);margin-bottom:24px}
+.form-title{font-size:18px;color:var(--navy);margin-bottom:18px;font-weight:700}
+.form-field{margin-bottom:16px}
+.form-field label{display:block;font-size:14px;font-weight:600;color:var(--tm);margin-bottom:6px}
+.req{color:var(--red)}
+.form-input{width:100%;padding:13px 16px;border:2px solid var(--sd);border-radius:10px;font-size:16px;font-family:inherit;background:var(--cream);transition:border-color .2s,background .2s}
+.form-input:focus{outline:none;border-color:var(--amber);background:#fff}
+.warning-box{background:#fff3cd;border:1px solid #ffc107;border-radius:10px;padding:12px 16px;font-size:13px;color:#856404;margin:16px 0;font-weight:600}
+.error-box{background:#fde8e8;border:1px solid #f5c2c2;border-radius:10px;padding:12px 16px;font-size:13px;color:var(--red);margin:12px 0;font-weight:600;text-align:center}
+.btn{width:100%;padding:16px;font-size:17px;font-weight:700;font-family:inherit;border:none;border-radius:14px;cursor:pointer;color:#fff;background:linear-gradient(135deg,var(--navy),var(--navy2));box-shadow:0 4px 14px rgba(26,34,56,.3);margin-top:8px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,34,56,.4)}
+.btn:disabled{opacity:.5;cursor:not-allowed;background:var(--sd);color:var(--tl)}
+.exam-header{display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:#fff;padding:16px 20px;border-radius:16px;margin:16px 0 12px;position:sticky;top:0;z-index:100;box-shadow:0 4px 16px rgba(26,34,56,.2)}
+.exam-title{font-size:15px;font-weight:700}
+.exam-student{font-size:12px;color:var(--amber2);margin-top:2px}
+.progress-count{background:var(--amber);color:var(--navy);padding:4px 12px;border-radius:20px;font-size:13px;font-weight:800}
+.progress-wrap{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding:0 4px}
+.progress-track{flex:1;height:8px;background:var(--sd);border-radius:4px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--amber),var(--green));border-radius:4px;transition:width .3s}
+.progress-pct{font-size:12px;color:var(--tl);font-weight:600;min-width:36px;text-align:left}
+.q-list{display:flex;flex-direction:column;gap:14px}
+.q-card{background:#fff;border:2px solid var(--sd);border-radius:14px;padding:18px 16px;transition:border-color .2s}
+.q-card.answered{border-color:var(--amber);box-shadow:0 2px 8px rgba(232,168,56,.1)}
+.q-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.q-num{background:var(--navy);color:#fff;min-width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.q-tag{font-size:11px;color:var(--petra);background:rgba(178,92,78,.1);padding:3px 10px;border-radius:12px;font-weight:600}
+.q-text{font-size:15px;font-weight:600;color:var(--td);line-height:1.6;margin-bottom:14px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:center;gap:10px;padding:11px 14px;border:2px solid var(--sd);border-radius:10px;cursor:pointer;font-size:14px;color:var(--tm);user-select:none;transition:all .18s}
+.opt:hover{border-color:#2a3550;background:rgba(26,34,56,.03)}
+.opt.sel{border-color:var(--navy);background:rgba(26,34,56,.06);color:var(--navy);font-weight:600}
+.opt.sel .opt-letter{background:var(--amber);color:var(--navy)}
+.opt-letter{min-width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:var(--sd);color:var(--tl);flex-shrink:0}
+.submit-area{margin:24px 0;text-align:center}
+.submit-info{font-size:14px;color:var(--tm);margin-bottom:14px}
+.submit-info strong{color:var(--navy);font-weight:800}
+.result-hero{background:linear-gradient(135deg,var(--navy),var(--navy2));border-radius:20px;padding:40px 24px;text-align:center;margin:16px 0 20px;position:relative;overflow:hidden}
+.result-circle{position:relative;z-index:1;width:120px;height:120px;border-radius:50%;margin:0 auto 16px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff}
+.result-circle.pass{background:linear-gradient(135deg,var(--green),#3eb878);box-shadow:0 0 30px rgba(45,134,89,.4)}
+.result-circle.fail{background:linear-gradient(135deg,var(--red),#e74c3c);box-shadow:0 0 30px rgba(192,57,43,.4)}
+.result-score{font-size:42px;font-weight:900;line-height:1}
+.result-total{font-size:14px;opacity:.8}
+.result-title{position:relative;z-index:1;color:#fff;font-size:24px;font-weight:800;margin-bottom:6px}
+.result-student{position:relative;z-index:1;color:var(--amber2);font-size:15px;margin-bottom:8px}
+.result-pct{position:relative;z-index:1;color:var(--amber);font-size:18px;font-weight:700}
+.result-stats{display:flex;gap:10px;margin-bottom:20px}
+.stat-card{flex:1;background:#fff;border-radius:14px;padding:18px 8px;text-align:center;border:2px solid var(--sd)}
+.stat-num{font-size:28px;font-weight:800}
+.stat-label{font-size:11px;color:var(--tl);margin-top:4px}
+.stat-correct .stat-num{color:var(--green)}
+.stat-wrong .stat-num{color:var(--red)}
+.stat-pct .stat-num{color:var(--navy)}
+.result-locked{background:rgba(26,34,56,.06);border:1px dashed #2a3550;border-radius:12px;padding:14px;text-align:center;font-size:14px;color:var(--tm);font-weight:600;margin-bottom:20px}
+.result-actions{display:flex;gap:10px;margin-bottom:24px}
+.btn-review,.btn-print{flex:1;padding:13px;font-size:14px;font-weight:700;font-family:inherit;border:2px solid var(--navy);border-radius:12px;cursor:pointer;background:#fff;color:var(--navy);transition:all .2s}
+.btn-review:hover,.btn-print:hover{background:var(--navy);color:#fff}
+.review-section{background:#fff;border-radius:16px;padding:20px;margin-bottom:20px;border:2px solid var(--sd)}
+.review-title{font-size:18px;color:var(--navy);margin-bottom:16px;font-weight:700;text-align:center}
+.review-lesson{margin-bottom:20px}
+.review-lesson-header{font-size:14px;font-weight:700;color:var(--petra);background:rgba(178,92,78,.08);padding:8px 14px;border-radius:10px;margin-bottom:10px}
+.review-item{padding:12px 14px;border-radius:10px;margin-bottom:8px;font-size:13px}
+.review-correct{background:rgba(45,134,89,.07);border-right:4px solid var(--green)}
+.review-wrong{background:rgba(192,57,43,.07);border-right:4px solid var(--red)}
+.review-q{font-weight:600;color:var(--td);margin-bottom:6px;line-height:1.5}
+.review-q-num{color:var(--tl);font-weight:700;margin-left:6px}
+.review-a{font-size:13px;padding:3px 0}
+.review-right{color:var(--green);font-weight:600}
+.review-your{color:var(--red);font-weight:600}
+.review-a-group{display:flex;flex-direction:column;gap:2px}
+.result-footer{text-align:center;font-size:13px;color:var(--tl);padding:16px;font-weight:600}
+@media(max-width:600px){.hero-title{font-size:28px}.hero-subtitle{font-size:18px}.info-cards{gap:6px;padding:14px 12px}.info-card{padding:12px 4px}.info-num{font-size:22px}.q-text{font-size:14px}.opt{font-size:13px;padding:10px 12px}.result-actions{flex-direction:column}.result-stats{gap:6px}.stat-num{font-size:22px}.exam-title{font-size:13px}}
+@media print{.exam-header,.progress-wrap,.result-actions,.review-section{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="app" id="app"></div>
+<script>
+var QUESTIONS=[
+{q:"ممّ تتألف كلمة الأردن (Jordan)؟",opts:["جور + دان (الرافدان الشماليان لنهر الأردن: بانياس + دان)","جور + نهر","أرد + أن","جوردان + نهر النيل"],a:0,l:"العصور الحجرية"},
+{q:"ما معنى كلمة الأردن عند العرب؟",opts:["المنحدر السحيق","النهر المتعرج","الشدّة والغلبة","الأرض الحمراء"],a:2,l:"العصور الحجرية"},
+{q:"ما معنى كلمة يوردانيم التي أطلقها الإغريق على الأردن؟",opts:["الشدّة والغلبة","المنحدر السحيق","النهر المتعرج","الأرض الخصبة"],a:1,l:"العصور الحجرية"},
+{q:"ما معنى كلمة الأردن بالآرامية؟",opts:["النهر المتعرج شديد الانحدار","المنحدر السحيق","الشدّة والغلبة","الأرض الحمراء"],a:0,l:"العصور الحجرية"},
+{q:"كم يبلغ عمر موقع دوقرة في وادي الزرقاء وهو من أقدم مواقع العصر الحجري القديم في قارة آسيا؟",opts:["1.5 مليون سنة","2 مليون سنة","2.5 مليون سنة","3 مليون سنة"],a:2,l:"العصور الحجرية"},
+{q:"ما هي أقدم مقبرة منظمة في العالم التي اكتُشفت في الأردن وتعود للعصر الحجري الوسيط؟",opts:["عين غزال","عيون الحمام في وادي زقالب (محافظة إربد)","تل أبو الصوان","بسطة"],a:1,l:"العصور الحجرية"},
+{q:"كم يبلغ عمر مقبرة عيون الحمام في وادي زقالب تقريباً؟",opts:["عشرة آلاف عام","اثنا عشر ألف عام","ستة عشر ألف عام","عشرون ألف عام"],a:2,l:"العصور الحجرية"},
+{q:"أي موقع يُعد نموذجاً للقرى الزراعية في العصر الحجري الحديث؟",opts:["تل أبو حامد","عين غزال في عمان","تليالت الغسول","تل الشونة الشمالية"],a:1,l:"العصور الحجرية"},
+{q:"بماذا تميّز موقع عين غزال عالمياً؟",opts:["أقدم سدود في العالم","أقدم تماثيل في العالم مصنوعة من الجبس","أقدم أدوات نحاسية في العالم","أقدم نقش أثري في العالم"],a:1,l:"العصور الحجرية"},
+{q:"ما هو أشهر مناجم استخراج معدن النحاس في جنوب الأردن في العصر النحاسي؟",opts:["وادي الحسا","تل الشونة الشمالية","وادي فينان","تليالت الغسول"],a:2,l:"العصور الحجرية"},
+{q:"ممّ يتألف معدن البرونز المستخدم في صناعة الأدوات في العصر البرونزي؟",opts:["النحاس والحديد","النحاس والقصدير","الحديد والقصدير","النحاس والفضة"],a:1,l:"العصور الحجرية"},
+{q:"ما النظام السياسي الجديد الذي ظهر في العصر البرونزي في الأردن؟",opts:["النظام القبلي","النظام الملكي الوراثي","دويلات المدن (دولة المدينة)","النظام الجمهوري"],a:2,l:"العصور الحجرية"},
+{q:"متى تبدأ العصور التاريخية حسب تقسيم علماء الآثار؟",opts:["منذ نشأة الإنسان على الأرض","منذ اختراع الكتابة","منذ بناء أول حضارة","منذ العصر البرونزي"],a:1,l:"العصور الحجرية"},
+{q:"ما الفترة الزمنية للعصر الحديدي في الأردن؟",opts:["1200 ق.م - 332 ق.م","1000 ق.م - 500 ق.م","1500 ق.م - 300 ق.م","1200 ق.م - 582 ق.م"],a:0,l:"العصر الحديدي"},
+{q:"ما سبب هجرة القبائل العربية من شبه الجزيرة العربية إلى الأردن في العصر الحديدي؟",opts:["البحث عن المعادن","القحط والجفاف وانهيار سد مأرب والنزاعات","الغزو الفرنجي","الحروب مع الروم"],a:1,l:"العصر الحديدي"},
+{q:"كم مملكة نشأت على أرض الأردن في العصر الحديدي؟",opts:["مملكتان","أربع ممالك","ثلاث ممالك: الأدومية والمؤابية والعمونية","خمس ممالك"],a:2,l:"العصر الحديدي"},
+{q:"ماذا يعني اسم آدوم الذي سُمّي به الأدوميون؟",opts:["الأرض الخصبة","اللون الأحمر","النهر المتعرج","الجبال الشاهقة"],a:1,l:"العصر الحديدي"},
+{q:"ما هي عاصمة المملكة الأدومية وفي أي محافظة تقع؟",opts:["الكرك (محافظة الكرك)","بصيرا (محافظة الطفيلة)","البترا (محافظة معان)","مأدبا (محافظة مأدبا)"],a:1,l:"العصر الحديدي"},
+{q:"لماذا اتخذ الأدوميون مدينة بصيرا عاصمة لهم؟",opts:["لوفرة المياه فيها","لموقعها الاستراتيجي على الطرق التجارية","لخصوبة أراضيها الزراعية","لقربها من البحر"],a:1,l:"العصر الحديدي"},
+{q:"ما هو نظام الحكم عند الأدوميين؟",opts:["ملكي وراثي","جمهوري","النظام القبلي (شيخ الشيوخ)","عسكري"],a:2,l:"العصر الحديدي"},
+{q:"ماذا حدث للمملكة الأدومية في القرن السادس قبل الميلاد؟",opts:["سقطت على يد الفرس","اندماج الأدوميين مع العرب الأنباط جنوبي الأردن","احتلها الإسكندر المقدوني","دمرها البابليون"],a:1,l:"العصر الحديدي"},
+{q:"ما هي عاصمة المملكة المؤابية؟",opts:["ذيبان في محافظة مأدبا بعد مؤاب (الكرك)","بصيرا في الطفيلة","ربة عمون (عمان)","البترا"],a:0,l:"العصر الحديدي"},
+{q:"من هو أشهر ملوك المؤابيين الذي انتصر على العبرانيين ووسّع مملكته؟",opts:["الملك نحاش الأول","الملك ميشع","الملك قوس ملك","الملك الحارث الثالث"],a:1,l:"العصر الحديدي"},
+{q:"مسلة ميشع (حجر مؤاب) تعود إلى أي عام؟",opts:["900 ق.م","850 ق.م","800 ق.م","750 ق.م"],a:1,l:"العصر الحديدي"},
+{q:"أين تُحفظ النسخة الأصلية من مسلة ميشع (حجر مؤاب)؟",opts:["المتحف الأردني","متحف اللوفر في باريس","المتحف البريطاني","متحف الكرك"],a:1,l:"العصر الحديدي"},
+{q:"ما هو امتداد المملكة العمونية؟",opts:["من وادي الحسا جنوباً إلى وادي الموجب شمالاً","من العقبة جنوباً إلى وادي الحسا شمالاً","من وادي الموجب جنوباً إلى نهر الزرقاء شمالاً","من وادي الموجب جنوباً إلى نهر اليرموك شمالاً"],a:2,l:"العصر الحديدي"},
+{q:"متى وصلت المملكة العمونية إلى أوج ازدهارها؟",opts:["في القرنين الثامن والسابع قبل الميلاد","في القرنين السابع والسادس قبل الميلاد","في القرنين السادس والخامس قبل الميلاد","في القرن الخامس قبل الميلاد"],a:1,l:"العصر الحديدي"},
+{q:"متى استقر الأنباط في جنوبي الأردن تقريباً؟",opts:["في القرن الرابع قبل الميلاد","في القرن السادس قبل الميلاد (العصر الحديدي)","في القرن الثامن قبل الميلاد","في القرن الثالث قبل الميلاد"],a:1,l:"المملكة النبطية"},
+{q:"على ماذا يدل استقرار الأنباط في المنطقة التي سكنها الأدوميون (البترا وبصيرا وخربة الذريح)؟",opts:["على العداوة بينهم","على الارتباط الحضاري واللغوي بينهم","على غزو الأنباط للأدوميين","على تحالفهم ضد الروم"],a:1,l:"المملكة النبطية"},
+{q:"ما هو امتداد مملكة الأنباط؟",opts:["من العقبة جنوباً إلى دمشق شمالاً","من مدائن صالح جنوباً حتى دمشق شمالاً ومن وادي السرحان شرقاً حتى غزة غرباً","من البترا جنوباً إلى عمون شمالاً","من معان جنوباً إلى إربد شمالاً"],a:1,l:"المملكة النبطية"},
+{q:"سبب اختيار الأنباط للبترا عاصمة لهم يعود لكل ما يلي ما عدا:",opts:["لموقعها على الطرق التجارية","لموقعها الحصين بين الجبال","لقربها من ينابيع المياه","لكثرة أراضيها الزراعية الواسعة"],a:3,l:"المملكة النبطية"},
+{q:"متى زار الرحالة السويسري (بيركهارت) البترا وعرّف بها للعالم الغربي؟",opts:["1805 م","1812 م","1820 م","1885 م"],a:1,l:"المملكة النبطية"},
+{q:"متى اختيرت البترا بوصفها إحدى عجائب الدنيا السبعة الجديدة؟",opts:["1985 م","2007 م","2012 م","2000 م"],a:1,l:"المملكة النبطية"},
+{q:"من هو الملك النبطي الذي وسّع مملكته حتى شملت دمشق وسكّ نقوده فيها؟",opts:["عبادة الأول","الحارث الثالث","الحارث الرابع","رب إيل الثاني"],a:1,l:"المملكة النبطية"},
+{q:"من هو الملك النبطي الذي كانت فترة حكمه أطولها وأكثرها ازدهاراً في تاريخ الأنباط؟",opts:["عبادة الأول","الحارث الثالث","الحارث الرابع","مالك الثاني"],a:2,l:"المملكة النبطية"},
+{q:"من هي المرأة التي برز دورها في السياسة والحكم عند الأنباط وحكمت عندما كان الملك رب إيل الثاني صغيراً؟",opts:["عائشة الباعونية","شقيلات والدة الملك رب إيل الثاني","زوجة الحارث الرابع","ابنة مالك الثاني"],a:1,l:"المملكة النبطية"},
+{q:"ما هي طريقة البناء النبطية بالنحت؟",opts:["من الأسفل إلى الأعلى","من الأعلى إلى الأسفل","من اليمين إلى اليسار","من الخارج إلى الداخل"],a:1,l:"المملكة النبطية"},
+{q:"لماذا سُمّي السيق البارد (في البيضا) بهذا الاسم؟",opts:["لكثرة المياه الباردة فيه","لعدم دخول أشعة الشمس إليه بسبب ضيقه","لبرودة الجو في المنطقة","لوقوعه في وادٍ عميق"],a:1,l:"المملكة النبطية"},
+{q:"ما هي اللغة التي استخدمها الأنباط في الكتابة؟",opts:["اللغة العربية بالأحرف النبطية","اللغة الآرامية بالأحرف النبطية ذات الأصل الآرامي","اللغة اليونانية بالأحرف النبطية","اللغة اللاتينية بالأحرف الآرامية"],a:1,l:"المملكة النبطية"},
+{q:"من هو إله القوافل التجارية عند الأنباط؟",opts:["ذو الشرى","الكتبا","شيع القوم","اللات"],a:2,l:"المملكة النبطية"},
+{q:"بعد وفاة الإسكندر المقدوني بين من أصبح الأردن ساحة صراع؟",opts:["بين الفرس والروم","بين البطالمة في مصر والسلوقيين في سوريا","بين الروم والأنباط","بين الأدوميين والعمونيين"],a:1,l:"اليونانية والرومانية"},
+{q:"ما هو أبرز أثر معماري يوناني لا يزال قائماً في الأردن؟",opts:["المدرج الروماني في عمان","قصر العراق الأمير (قصر العبد)","الخزنة في البترا","قلعة عجلون"],a:1,l:"اليونانية والرومانية"},
+{q:"متى اكتُشف أول تمثال شبه كامل لإلهة الحب والجمال (أفروديت) في مدينة جرش؟",opts:["2010 م","2013 م","2016 م","2019 م"],a:2,l:"اليونانية والرومانية"},
+{q:"من أسّس حلف الديكابوليس (حلف المدن العشر) وفي أي عام؟",opts:["القائد الروماني بومبي عام 64 ق.م","الإمبراطور تراجان عام 106 م","الإسكندر المقدوني عام 332 ق.م","القائد غورو عام 1920 م"],a:0,l:"اليونانية والرومانية"},
+{q:"أي مدينة أصبحت مركزاً للثقافة والفن ومعهداً للحقوق في العصر الروماني؟",opts:["جرش","عمون","جدارا (أم قيس)","طبقة فحل"],a:2,l:"اليونانية والرومانية"},
+{q:"من أنشأ الطريق الملوكي لربط مصر ببلاد الشام في العصر الروماني؟",opts:["القائد بومبي","الإمبراطور تراجان","الإمبراطور قسطنطين","الإمبراطور ديكيوس"],a:1,l:"اليونانية والرومانية"},
+{q:"ما هو المفهوم المقصود بـ الحضارة الهلنستية؟",opts:["الحضارة اليونانية فقط","تمازج وتفاعل الحضارة اليونانية مع حضارات الشرق القديمة","الحضارة الرومانية في الشرق","الحضارة الفارسية في بلاد الشام"],a:1,l:"اليونانية والرومانية"},
+{q:"أين يقع موقع المغطس (مكان تعميد السيد المسيح عليه السلام)؟",opts:["في وادي الخرار شمال البحر الميت","في وادي الأردن جنوب البحر الميت","في نهر اليرموك","في العقبة"],a:0,l:"اليونانية والرومانية"},
+{q:"أين يقع موقع أهل الكهف (الرقيم) المذكور في القرآن الكريم؟",opts:["شمال غرب عمان","جنوب شرق عمان","في جرش","في الكرك"],a:1,l:"اليونانية والرومانية"},
+{q:"ما هو نوع التخطيط المعماري لكنيسة القديس جورجيوس في رحاب المفرق؟",opts:["التخطيط المركزي (بقبة)","التخطيط البازليكي (من الشرق إلى الغرب)","التخطيط الدائري","التخطيط المربع"],a:1,l:"اليونانية والرومانية"}
+];
+var phase='intro',answers={},submitted=false,studentName='',studentClass='';
+var app=document.getElementById('app');
+try{if(localStorage.getItem('history_exam_done')==='true'){var s=localStorage.getItem('history_exam_result');if(s){var r=JSON.parse(s);studentName=r.name||'';studentClass=r.cls||'';answers=r.answers||{};submitted=true;phase='result';}}}catch(e){}
+function render(){
+  var ac=Object.keys(answers).length,pr=Math.round((ac/QUESTIONS.length)*100);
+  if(phase==='intro'){app.innerHTML='<div class="hero"><div class="hero-pattern"></div><div class="hero-content"><div class="hero-badge">تاريخ الأردن - جيل 2009</div><h1 class="hero-title">تاريخ الأردن</h1><h2 class="hero-subtitle">الوحدة الأولى</h2><div class="hero-divider"></div><p class="hero-desc">العصور الحجرية - العصر الحديدي - المملكة النبطية - الحضارتين اليونانية والرومانية</p><div class="hero-teacher">إعداد أستاذ طلحة الخير أبو فضة</div></div></div><div class="info-cards"><div class="info-card"><div class="info-num">50</div><div class="info-label">سؤال</div></div><div class="info-card"><div class="info-num">4</div><div class="info-label">خيارات</div></div><div class="info-card"><div class="info-num">1</div><div class="info-label">محاولة</div></div><div class="info-card"><div class="info-num">50</div><div class="info-label">العلامة الكاملة</div></div></div><div class="form-card"><h3 class="form-title">أدخل بياناتك قبل البدء</h3><div class="form-field"><label>الاسم الكامل <span class="req">*</span></label><input type="text" id="sName" class="form-input" placeholder="اكتب اسمك الكامل هنا" value="'+studentName+'"></div><div class="form-field"><label>الصف والشعبة</label><input type="text" id="sClass" class="form-input" placeholder="مثال: التاسع / أ" value="'+studentClass+'"></div><div class="warning-box">تنبيه: لديك محاولة واحدة فقط. بعد التسليم لن تتمكن من إعادة الامتحان.</div><div id="errBox" style="display:none" class="error-box"></div><button class="btn" onclick="startExam()">ابدأ الامتحان</button></div>';return;}
+  if(phase==='exam'){var qs='';for(var i=0;i<QUESTIONS.length;i++){var q=QUESTIONS[i],sel=answers[i]!==undefined?' answered':'';qs+='<div class="q-card'+sel+'" id="qc'+i+'"><div class="q-top"><span class="q-num">'+(i+1)+'</span><span class="q-tag">'+q.l+'</span></div><div class="q-text">'+q.q+'</div><div class="opts">';for(var j=0;j<q.opts.length;j++){var s=answers[i]===j?' sel':'';qs+='<div class="opt'+s+'" onclick="selectAnswer('+i+','+j+')"><span class="opt-letter">'+String.fromCharCode(1571+j)+'</span><span>'+q.opts[j]+'</span></div>';}qs+='</div></div>';}app.innerHTML='<div class="exam-header"><div><div class="exam-title">تاريخ الأردن - الوحدة الأولى</div><div class="exam-student">'+studentName+(studentClass?' - '+studentClass:'')+'</div></div><div class="progress-count">'+ac+'/'+QUESTIONS.length+'</div></div><div class="progress-wrap"><div class="progress-track"><div class="progress-fill" style="width:'+pr+'%"></div></div><span class="progress-pct">'+pr+'%</span></div><div class="q-list">'+qs+'</div><div id="errBox" style="display:none" class="error-box"></div><div class="submit-area"><div class="submit-info">أجبت على <strong>'+ac+'</strong> من <strong>'+QUESTIONS.length+'</strong> سؤالاً</div><button class="btn" onclick="submitExam()" '+(ac<QUESTIONS.length?'disabled':'')+'>'+(ac<QUESTIONS.length?'أكمل جميع الأسئلة أولاً':'تسليم الامتحان وعرض النتيجة')+'</button></div>';return;}
+  var score=0;for(var i=0;i<QUESTIONS.length;i++){if(answers[i]===QUESTIONS[i].a)score++;}
+  var pct=Math.round((score/QUESTIONS.length)*100),passed=pct>=50;
+  var lessons={};QUESTIONS.forEach(function(q,i){if(!lessons[q.l])lessons[q.l]=[];lessons[q.l].push(i);});
+  var rh='<div class="review-section" id="reviewSec" style="display:none"><h3 class="review-title">مراجعة الإجابات</h3>';
+  Object.keys(lessons).forEach(function(l){rh+='<div class="review-lesson"><div class="review-lesson-header">'+l+'</div>';lessons[l].forEach(function(i){var q=QUESTIONS[i],isC=answers[i]===q.a;rh+='<div class="review-item '+(isC?'review-correct':'review-wrong')+'"><div class="review-q"><span class="review-q-num">'+(i+1)+'</span>'+q.q+'</div>';if(isC){rh+='<div class="review-a review-right">صحيح: '+q.opts[q.a]+'</div>';}else{rh+='<div class="review-a-group"><div class="review-a review-your">إجابتك: '+(q.opts[answers[i]]||'—')+'</div><div class="review-a review-right">الصحيحة: '+q.opts[q.a]+'</div></div>';}rh+='</div>';});rh+='</div>';});rh+='</div>';
+  app.innerHTML='<div class="result-hero"><div class="result-circle '+(passed?'pass':'fail')+'"><div class="result-score">'+score+'</div><div class="result-total">/ '+QUESTIONS.length+'</div></div><h2 class="result-title">'+(passed?'ناجح!':'راسب')+'</h2><div class="result-student">'+studentName+(studentClass?' - '+studentClass:'')+'</div><div class="result-pct">'+pct+'%</div></div><div class="result-stats"><div class="stat-card stat-correct"><div class="stat-num">'+score+'</div><div class="stat-label">إجابات صحيحة</div></div><div class="stat-card stat-wrong"><div class="stat-num">'+(QUESTIONS.length-score)+'</div><div class="stat-label">إجابات خاطئة</div></div><div class="stat-card stat-pct"><div class="stat-num">'+pct+'%</div><div class="stat-label">النسبة</div></div></div><div class="result-locked">تم تسليم الامتحان. المحاولة الواحدة انتهت.</div><div class="result-actions"><button class="btn-review" onclick="toggleReview()">عرض مراجعة الإجابات</button><button class="btn-print" onclick="window.print()">طباعة النتيجة</button></div>'+rh+'<div class="result-footer">إعداد أستاذ طلحة الخير أبو فضة - تاريخ الأردن - جيل 2009</div>';
+}
+function startExam(){var n=document.getElementById('sName').value.trim();if(!n){var e=document.getElementById('errBox');e.textContent='الرجاء إدخال الاسم الكامل';e.style.display='block';setTimeout(function(){e.style.display='none';},4000);return;}studentName=n;studentClass=document.getElementById('sClass').value.trim();phase='exam';render();window.scrollTo(0,0);}
+function selectAnswer(i,j){if(submitted)return;answers[i]=j;var c=document.getElementById('qc'+i);if(c){c.classList.add('answered');var os=c.querySelectorAll('.opt');os.forEach(function(o,k){if(k===j)o.classList.add('sel');else o.classList.remove('sel');});}var ac=Object.keys(answers).length,pr=Math.round((ac/QUESTIONS.length)*100);var f=document.querySelector('.progress-fill');if(f)f.style.width=pr+'%';var pp=document.querySelector('.progress-pct');if(pp)pp.textContent=pr+'%';var pc=document.querySelector('.progress-count');if(pc)pc.textContent=ac+'/'+QUESTIONS.length;var si=document.querySelector('.submit-info');if(si)si.innerHTML='أجبت على <strong>'+ac+'</strong> من <strong>'+QUESTIONS.length+'</strong> سؤالاً';var sb=document.querySelector('.submit-area .btn');if(sb){if(ac>=QUESTIONS.length){sb.disabled=false;sb.textContent='تسليم الامتحان وعرض النتيجة';}else{sb.disabled=true;sb.textContent='أكمل جميع الأسئلة أولاً';}}}
+function submitExam(){var ac=Object.keys(answers).length;if(ac<QUESTIONS.length){var e=document.getElementById('errBox');if(e){e.textContent='أجبت على '+ac+' من '+QUESTIONS.length+' سؤالاً. يجب الإجابة على جميع الأسئلة.';e.style.display='block';setTimeout(function(){e.style.display='none';},4000);}return;}submitted=true;phase='result';try{localStorage.setItem('history_exam_done','true');localStorage.setItem('history_exam_result',JSON.stringify({name:studentName,cls:studentClass,answers:answers}));}catch(e){}render();window.scrollTo(0,0);}
+function toggleReview(){var r=document.getElementById('reviewSec');if(r){r.style.display=r.style.display==='none'?'block':'none';r.scrollIntoView({behavior:'smooth'});}}
+window.addEventListener('beforeunload',function(e){if(phase==='exam'&&!submitted){e.preventDefault();e.returnValue='لم تسلّم الامتحان بعد';return e.returnValue;}});
+render();
+</script>
+</body>
+</html>
