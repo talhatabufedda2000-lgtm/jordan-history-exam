@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>امتحان تاريخ الأردن - الوحدة الثانية | أ. طلحة الخير أبو فضة</title>
+<meta name="description" content="امتحان تاريخ الأردن للصف التاسع - الوحدة الثانية: الأردن في العصور الإسلامية. 50 سؤال اختيار من متعدد، محاولة واحدة. إعداد أ. طلحة الخير أبو فضة">
+<style>
+:root{--primary:#0d7c5b;--primary-d:#0a6147;--accent:#d4af37;--ok:#16a34a;--bad:#dc2626;--warn:#d97706;--ink:#1e293b;--muted:#64748b;--line:#e2e8f0;--soft:#f1f5f9;--card:#ffffff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:"Tajawal","Cairo","Segoe UI",Tahoma,sans-serif;background:linear-gradient(135deg,#0f172a 0%,#1e3a4c 100%);min-height:100vh;color:var(--ink);line-height:1.9;padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+.page{max-width:860px;margin:0 auto;padding-bottom:24px}
+.header{background:linear-gradient(135deg,#0d7c5b,#0a6147);color:#fff;border-radius:20px;padding:28px 22px;text-align:center;box-shadow:0 12px 30px rgba(13,124,91,.25);margin-bottom:18px;border:3px solid var(--accent)}
+.header .crest{font-size:34px;margin-bottom:6px}
+.header h1{font-size:26px;margin-bottom:8px;font-weight:800}
+.header .sub{font-size:15px;opacity:.95;margin-bottom:2px}
+.header .teacher{display:inline-block;margin-top:12px;background:rgba(255,255,255,.15);padding:8px 18px;border-radius:50px;font-size:15px;font-weight:700;border:1px solid var(--accent)}
+.header .teacher b{color:var(--accent)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 0;font-size:13px}
+.meta span{background:rgba(255,255,255,.12);padding:4px 12px;border-radius:20px}
+.card{background:var(--card);border-radius:16px;padding:20px;margin-bottom:14px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.start-card{border:2px solid var(--primary)}
+.start-card h2{color:var(--primary-d);font-size:22px;margin-bottom:10px;text-align:center;font-weight:800}
+.start-card p{color:var(--muted);font-size:15px;margin-bottom:14px;text-align:center}
+.warn{background:#fef3c7;border:1px solid #fcd34d;color:#92400e;padding:10px 14px;border-radius:10px;margin-bottom:12px;font-size:14px;text-align:center}
+.form-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.form-row label{flex:1;min-width:220px}
+.form-row label span{display:block;font-size:14px;font-weight:700;margin-bottom:4px;color:var(--ink)}
+.form-row input{width:100%;padding:12px 14px;border:2px solid var(--line);border-radius:10px;font-size:16px;font-family:inherit;transition:.2s;background:#fff}
+.form-row input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(13,124,91,.12)}
+.rules{background:var(--soft);border-radius:12px;padding:14px 16px;font-size:14px;color:#334155;margin-top:8px}
+.rules ul{list-style:none;padding:0}
+.rules li{padding:4px 22px;position:relative}
+.rules li:before{content:"✓";position:absolute;right:0;color:var(--primary);font-weight:800}
+.btn{display:block;width:100%;padding:15px;border:none;border-radius:12px;font-size:18px;font-weight:800;cursor:pointer;transition:.2s;font-family:inherit;background:linear-gradient(135deg,var(--primary),var(--primary-d));color:#fff;box-shadow:0 6px 16px rgba(13,124,91,.3);margin-top:14px}
+.btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 8px 20px rgba(13,124,91,.4)}
+.btn:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.btn.sec{background:var(--soft);color:var(--ink);box-shadow:none;border:2px solid var(--line)}
+.exam-meta{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;color:#cbd5e1;font-size:14px}
+.student-tag{background:rgba(255,255,255,.08);padding:6px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.15)}
+.answered{background:var(--accent);color:#1e293b;padding:6px 14px;border-radius:20px;font-weight:800}
+.progress-bar{height:6px;background:rgba(255,255,255,.12);border-radius:50px;overflow:hidden;margin-bottom:14px}
+.progress-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--primary),var(--accent));transition:.3s;width:0}
+.questions{display:grid;gap:12px}
+.q{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 3px 10px rgba(0,0,0,.06);border:1px solid var(--line)}
+.q-head{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.q-num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-d));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px}
+.q-body{flex:1;padding-top:2px}
+.q-text{font-size:17px;font-weight:700;color:var(--ink)}
+.q-lesson{font-size:12px;color:var(--muted);margin-top:4px;font-weight:600}
+.q-status{font-size:13px;font-weight:800;margin-top:6px}
+.opts{display:grid;gap:8px}
+.opt{display:flex;gap:10px;align-items:center;padding:12px 14px;border:2px solid var(--line);border-radius:10px;cursor:pointer;transition:.15s;font-size:16px;background:#fff}
+@media (hover:hover){.opt:hover{border-color:var(--primary);background:var(--soft)}}
+.opt.sel{border-color:var(--primary);background:rgba(13,124,91,.08)}
+.opt .box{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--primary);transition:.15s}
+.opt.sel .box{background:var(--primary);color:#fff;border-color:var(--primary)}
+.opt.locked{cursor:default}
+.opt.correct{border-color:var(--ok);background:rgba(22,163,74,.1)}
+.opt.correct .box{background:var(--ok);color:#fff;border-color:var(--ok)}
+.opt.wrong{border-color:var(--bad);background:rgba(220,38,38,.08)}
+.opt.wrong .box{background:var(--bad);color:#fff;border-color:var(--bad)}
+.opt-text{flex:1}
+.result-card{background:linear-gradient(135deg,#fff,#f8fafc);border:2px solid var(--accent);border-radius:18px;padding:28px;text-align:center;margin-bottom:16px;box-shadow:0 8px 22px rgba(0,0,0,.1)}
+.grade-circle{width:140px;height:140px;border-radius:50%;margin:0 auto 16px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:800;border:6px solid rgba(255,255,255,.4);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.grade-circle .pct{font-size:42px;line-height:1}
+.grade-circle .lbl{font-size:13px;opacity:.95;margin-top:2px}
+.result-card h2{font-size:22px;margin-bottom:8px;color:var(--ink)}
+.score-line{font-size:16px;color:var(--muted);margin-bottom:14px}
+.verdict{font-size:19px;font-weight:800;padding:9px 22px;border-radius:50px;display:inline-block;margin-bottom:10px}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+.stats .stat{background:var(--soft);padding:8px 16px;border-radius:10px;font-size:14px;font-weight:700}
+.stats .stat.ok{color:var(--ok)}.stats .stat.bad{color:var(--bad)}.stats .stat.skip{color:var(--muted)}
+.review-title{color:#cbd5e1;font-size:20px;font-weight:800;margin:20px 0 12px;text-align:center}
+.q.r-ok{border-right:4px solid var(--ok)}
+.q.r-bad{border-right:4px solid var(--bad)}
+.q.r-skip{border-right:4px solid var(--muted);opacity:.85}
+.q.r-ok .q-status{color:var(--ok)}.q.r-bad .q-status{color:var(--bad)}.q.r-skip .q-status{color:var(--muted)}
+.foot{text-align:center;color:#94a3b8;font-size:13px;padding:18px 0}
+.hide{display:none}
+@media print{body{background:#fff;padding:0}.btn,.exam-meta,.progress-bar{display:none}.header{box-shadow:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="crest">📜</div>
+    <h1>امتحان تاريخ الأردن</h1>
+    <div class="sub">الوحدة الثانية: الأردن في العصور الإسلامية</div>
+    <div class="sub">تاريخ الأردن · الجيل 2009</div>
+    <div class="teacher">إعداد: <b>أ. طلحة الخير أبو فضة</b></div>
+    <div class="meta"><span>50 سؤال اختيار من متعدد</span><span>مستوى: متوسط - صعب</span><span>محاولة واحدة</span></div>
+  </div>
+  <div class="card start-card" id="startCard">
+    <h2>بيانات الطالب</h2>
+    <p>أدخل بياناتك ثم اضغط (ابدأ الامتحان). يُسمح بمحاولة واحدة فقط.</p>
+    <div class="form-row">
+      <label><span>الاسم الكامل *</span><input id="sName" placeholder="اكتب اسمك هنا" inputmode="text"></label>
+      <label><span>الصف / الشعبة *</span><input id="sClass" placeholder="مثال: التاسع - أ" inputmode="text"></label>
+    </div>
+    <div class="rules"><ul>
+      <li>الامتحان يحتوي على 50 سؤال اختيار من متعدد.</li>
+      <li>لكل سؤال إجابة واحدة صحيحة فقط.</li>
+      <li>محاولة واحدة فقط: بعد التسليم لا يمكن إعادة المحاولة.</li>
+      <li>بعد التسليم تظهر علامتك ومراجعة الإجابات الصحيحة والخاطئة.</li>
+      <li>كل سؤال يساوي درجتين (من 100).</li>
+    </ul></div>
+    <button class="btn" id="startBtn">ابدأ الامتحان ←</button>
+  </div>
+  <div id="exam" class="hide">
+    <div class="exam-meta"><div class="student-tag" id="studentTag"></div><div class="answered"><span id="answeredN">0</span> / 50 مجاب</div></div>
+    <div class="progress-bar"><i id="pbar"></i></div>
+    <div class="questions" id="questions"></div>
+    <button class="btn" id="submitBtn">تسليم الامتحان وعرض العلامة ✓</button>
+  </div>
+  <div id="result" class="hide">
+    <div class="result-card">
+      <div class="grade-circle" id="gCircle"><span class="pct">--</span><span class="lbl">من 100</span></div>
+      <h2 id="studentName"></h2>
+      <div class="score-line" id="scoreLine"></div>
+      <div class="verdict" id="verdict"></div>
+      <div class="stats"><div class="stat ok" id="cOk"></div><div class="stat bad" id="cBad"></div><div class="stat skip" id="cSkip"></div></div>
+      <button class="btn sec" onclick="window.print()">🖨️ طباعة النتيجة</button>
+    </div>
+    <h3 class="review-title">مراجعة الإجابات</h3>
+    <div class="questions" id="review"></div>
+  </div>
+  <div class="foot">امتحان تاريخ الأردن — الوحدة الثانية · إعداد أ. طلحة الخير أبو فضة</div>
+</div>
+<script>
+const LESSONS=["الدرس الأول: الغساسنة ومعركة مؤتة","الدرس الثاني: الأمويون والعباسيون ومعركة اليرموك","الدرس الثالث: الحروب الصليبية ومعركة حطين","الدرس الرابع: العصر الأيوبي","الدرس الخامس: العصر المملوكي"];
+const QUESTIONS=[
+{l:LESSONS[0],q:"من هم الغساسنة الذين سكنوا جنوب بلاد الشام والأردن في عصر النبي ﷺ؟",o:["قبيلة عربية نصرانية ارتبطت بالبيزنطيين (الروم)","قبيلة عربية وثنية ارتبطت بالفرس","قبيلة عربية يهودية في شمال الجزيرة","مملكة عربية من الأنباط"],a:0},
+{l:LESSONS[0],q:"ما الديانة التي اعتنقها الغساسنة قبل الإسلام؟",o:["المسيحية","الإسلام","اليهودية","الوثنية"],a:0},
+{l:LESSONS[0],q:"من هو آخر ملوك الغساسنة؟",o:["جبلة بن الأيهم","الحارث بن جبلة","النعمان بن المنذر","عمرو بن هند"],a:0},
+{l:LESSONS[0],q:"على من كان الغساسنة يتبعون سياسياً وعسكرياً؟",o:["الإمبراطورية البيزنطية (الروم)","الإمبراطورية الفارسية (الساسانيون)","دولة الأنباط","مملكة تدمر"],a:0},
+{l:LESSONS[0],q:"ما العاصمة التي اتخذها الغساسنة لمملكتهم؟",o:["الجابية","تدمر","بصرى","البتراء"],a:0},
+{l:LESSONS[0],q:"في أي عام هجري وقعت معركة مؤتة؟",o:["8 هـ","13 هـ","6 هـ","15 هـ"],a:0},
+{l:LESSONS[0],q:"ما السبب المباشر لإرسال النبي ﷺ جيش مؤتة؟",o:["قتل شرحبيل بن عمرو الغساني لرسول النبي الحارث بن عمير الأزدي","اعتداء الروم على المدينة","خيانة الغساسنة للعهد","طلب النصرة من القبائل"],a:0},
+{l:LESSONS[0],q:"من القائد الأول الذي عيّنه النبي ﷺ حاملاً للراية في مؤتة؟",o:["زيد بن حارثة","جعفر بن أبي طالب","عبد الله بن رواحة","خالد بن الوليد"],a:0},
+{l:LESSONS[0],q:"من تولى الراية في مؤتة بعد استشهاد زيد بن حارثة؟",o:["جعفر بن أبي طالب","عبد الله بن رواحة","خالد بن الوليد","المثنى بن حارثة"],a:0},
+{l:LESSONS[0],q:"من القائد الثالث الذي استشهد وهو يحمل الراية في مؤتة؟",o:["عبد الله بن رواحة","خالد بن الوليد","زيد بن حارثة","جعفر بن أبي طالب"],a:0},
+{l:LESSONS[0],q:"من القائد الذي تولى الراية الرابعة في مؤتة ونجّى الجيش بانسحاب منظم؟",o:["خالد بن الوليد","أبو عبيدة عامر بن الجراح","يزيد بن أبي سفيان","شرحبيل بن حسنة"],a:0},
+{l:LESSONS[0],q:"ما اللقب الذي أطلقه النبي ﷺ على خالد بن الوليد بعد مؤتة؟",o:["سيف الله المسلول","الفاروق","أمين الأمة","تاج الإسلام"],a:0},
+{l:LESSONS[0],q:"كم كان عدد جيش المسلمين تقريباً في معركة مؤتة؟",o:["حوالي 3000 مقاتل","حوالي 10000 مقاتل","حوالي 500 مقاتل","حوالي 30000 مقاتل"],a:0},
+{l:LESSONS[0],q:"من القوى التي واجهها المسلمون في معركة مؤتة؟",o:["البيزنطيون (الروم) وحلفاؤهم من القبائل العربية","الفرس الساسانيون","الصليبيون","المماليك"],a:0},
+{l:LESSONS[0],q:"ماذا يميز موقع مؤتة جغرافياً؟",o:["منطقة في جنوب الأردن قرب الكرك","شمال الأردن قرب إربد","وادٍ في شبه الجزيرة العربية","ساحل البحر المتوسط"],a:0},
+{l:LESSONS[1],q:"في أي عهد وقعت معركة اليرموك الفاصلة؟",o:["خلافة أبي بكر الصديق","خلافة عمر بن الخطاب","خلافة عثمان بن عفان","عصر النبي ﷺ"],a:0},
+{l:LESSONS[1],q:"من القائد الذي قاد المسلمين في معركة اليرموك؟",o:["خالد بن الوليد","أبو عبيدة بن الجراح","عمرو بن العاص","سعد بن أبي وقاص"],a:0},
+{l:LESSONS[1],q:"ما نتيجة معركة اليرموك؟",o:["هزيمة الروم وفتح بلاد الشام والأردن","انتصار الروم وطرد المسلمين","صلح بين الطرفين","انسحاب الطرفين"],a:0},
+{l:LESSONS[1],q:"ماذا كان يطلق على المعارك التي وقعت على أطراف الأردن قبل فتحه الكامل؟",o:["معارك الأطراف","معارك الفتوحات الكبرى","غزوات الشام","وقعات الحدود"],a:0},
+{l:LESSONS[1],q:"من هو مؤسس الدولة الأموية؟",o:["معاوية بن أبي سفيان","عبد الملك بن مروان","مروان بن الحكم","الوليد بن عبد الملك"],a:0},
+{l:LESSONS[1],q:"ما المدينة التي اتخذها الأمويون عاصمة لدولتهم؟",o:["دمشق","بغداد","الكوفة","المدينة المنورة"],a:0},
+{l:LESSONS[1],q:"من الخليفة الأموي الذي عرّب الدواوين وضرب النقود الإسلامية؟",o:["عبد الملك بن مروان","معاوية بن أبي سفيان","عمر بن عبد العزيز","هشام بن عبد الملك"],a:0},
+{l:LESSONS[1],q:"من الخليفة الأموي الذي اكتمل في عهده بناء قبة الصخرة والمسجد الأقصى؟",o:["الوليد بن عبد الملك","عبد الملك بن مروان","معاوية بن أبي سفيان","سليمان بن عبد الملك"],a:0},
+{l:LESSONS[1],q:"كيف كان يُدار الأردن في العصر الأموي؟",o:["ولاية تابعة للخلافة في دمشق","إمارة مستقلة","تحت حكم ملكي محلي","ولاية تابعة لبغداد"],a:0},
+{l:LESSONS[1],q:"من هو مؤسس الدولة العباسية؟",o:["أبو العباس السفاح","أبو جعفر المنصور","أبو مسلم الخراساني","هارون الرشيد"],a:0},
+{l:LESSONS[1],q:"ما المدينة التي اتخذها العباسيون عاصمة لدولتهم؟",o:["بغداد","دمشق","الكوفة","القاهرة"],a:0},
+{l:LESSONS[1],q:"من الخليفة العباسي الذي بنى مدينة بغداد؟",o:["أبو جعفر المنصور","أبو العباس السفاح","هارون الرشيد","المأمون"],a:0},
+{l:LESSONS[1],q:"ما سبب ضعف الاهتمام بالأردن في العصر العباسي مقارنة بالأموي؟",o:["نقل العاصمة إلى بغداد وابتعاد الأردن عن مركز الخلافة","كثرة الثورات في الأردن","تحول الأردن إلى المسيحية","وجود احتلال صليبي"],a:0},
+{l:LESSONS[1],q:"ما الدور الذي لعبه الأردن اقتصادياً في العصرين الأموي والعباسي؟",o:["محطة تجارية وزراعية على طرق المواصلات","مركز صناعي رئيسي","عاصمة الخلافة","ميناء بحري كبير"],a:0},
+{l:LESSONS[1],q:"ما المدينة الأردنية التي ازدهرت كمركز إداري وعمراني في العصر الأموي؟",o:["بصرى والطفيلة (ولايات)","العقبة الميناء الكبير","الزرقاء الصناعية","إربد الحديثة"],a:0},
+{l:LESSONS[2],q:"ما الاسم الذي أطلقه المسلمون على الصليبيين القادمين من أوروبا؟",o:["الإفرنج","الروم","الفرس","التتار"],a:0},
+{l:LESSONS[2],q:"في أي عام احتل الصليبيون بيت المقدس في بداية الحروب الصليبية؟",o:["492 هـ / 1099 م","583 هـ / 1187 م","8 هـ / 629 م","1516 م / 922 هـ"],a:0},
+{l:LESSONS[2],q:"من القائد المسلم الذي انتصر على الصليبيين في معركة حطين؟",o:["صلاح الدين الأيوبي","نور الدين محمود","الظاهر بيبرس","المعز أيبك"],a:0},
+{l:LESSONS[2],q:"في أي عام وقعت معركة حطين الفاصلة؟",o:["583 هـ / 1187 م","492 هـ / 1099 م","648 هـ / 1250 م","1516 م / 922 هـ"],a:0},
+{l:LESSONS[2],q:"ما النتيجة المباشرة لمعركة حطين؟",o:["تحرير بيت المقدس من الصليبيين","احتلال الصليبيين للأردن","تدمير قلعة الكرك","سقوط الدولة الأيوبية"],a:0},
+{l:LESSONS[2],q:"ما القلعة الأردنية الشهيرة التي اتخذها الصليبيون معقلاً لهم؟",o:["قلعة الكرك","قلعة حلب","قلعة بصرى","قلعة نابلس"],a:0},
+{l:LESSONS[2],q:"من حاكم الكرك الصليبي الذي استهزأ بحجاج بيت الله الحرام واعترض قوافل الحجاج؟",o:["أرناط (ريموند)","فولك ملك بيت المقدس","بلدوين الرابع","غودفري"],a:0},
+{l:LESSONS[2],q:"ما الذي فعله أرناط الذي استفز صلاح الدين وحرّضه على القتال؟",o:["اعتدى على قوافل الحجاج واستهزأ بالدين","بنى كنائس جديدة","تحالف مع البيزنطيين","هاجم القاهرة"],a:0},
+{l:LESSONS[2],q:"لماذا اهتم الصليبيون بالأردن تحديداً؟",o:["وقوعها على طريق الحج وتصل طرق بيت المقدس بمصر والشام","وجود الذهب فيها","خصوبة أراضيها فقط","قربها من البحر المتوسط فقط"],a:0},
+{l:LESSONS[2],q:"كيف استعاد المسلمون بيت المقدس بعد حطين؟",o:["بالفتح السلمي بعد هزيمة الصليبيين","بالحصار البحري","بمعركة أخرى في الأردن","بصلح طويل الأمد"],a:0},
+{l:LESSONS[3],q:"من هو مؤسس الدولة الأيوبية؟",o:["صلاح الدين الأيوبي","نور الدين محمود","الظاهر بيبرس","أسد الدين شيركوه"],a:0},
+{l:LESSONS[3],q:"ما العاصمة التي اتخذها صلاح الدين الأيوبي مركزاً لدولته؟",o:["القاهرة ودمشق","بغداد","دمشق فقط","الكرك"],a:0},
+{l:LESSONS[3],q:"ما الإجراء الذي اتخذه الأيوبيون في الأردن بعد تحريرها من الصليبيين؟",o:["إعمار الكرك وتحصينها وتأمين طرق الحج","هجر الأردن تماماً","تسليمها للصليبيين","تحويلها إلى عاصمة"],a:0},
+{l:LESSONS[3],q:"ما الخدمة البارزة التي قدّمها الأيوبيون للحجاج؟",o:["تأمين طرق الحج وحماية قوافل الحجاج","بناء المطارات","تأسيس الجامعات","ضرب النقود الجديدة"],a:0},
+{l:LESSONS[3],q:"من تولى الحكم في الدولة الأيوبية بعد صلاح الدين؟",o:["أمراء بيت الأيوبي (الملك العادل وأبناؤه)","الظاهر بيبرس","نور الدين","المماليك مباشرة"],a:0},
+{l:LESSONS[3],q:"لماذا اهتم الأيوبيون بقلعة الكرك؟",o:["لأنها مركز دفاعي يربط بين مصر والشام ويحمي طرق الحج","لأنها عاصمتهم","لوجود الذهب فيها","لقربها من بغداد"],a:0},
+{l:LESSONS[4],q:"من هو السلطان المملوكي الذي اهتم بقلعة الكرك وجعلها مركزاً مهماً؟",o:["الظاهر بيبرس","صلاح الدين","نور الدين","المعز أيبك"],a:0},
+{l:LESSONS[4],q:"ما المدينة التي اتخذها المماليك عاصمة لدولتهم؟",o:["القاهرة","دمشق","بغداد","الكرك"],a:0},
+{l:LESSONS[4],q:"ما الإجراء الأبرز الذي اتخذه المماليك لحماية طرق الحج في الأردن؟",o:["إقامة الخانات والقلاع وتأمين الطرق وبريد الحمام","بناء الجامعات","ضرب النقود فقط","توقيع صلح مع الصليبيين"],a:0},
+{l:LESSONS[4],q:"ما سبب اهتمام المماليك بالأردن بشكل خاص؟",o:["وقوعها على طريق الحج الشامي ومصر وحماية قوافل الحجاج","كونها عاصمة الخلافة","وجود البترول","قربها من أوروبا"],a:0},
+{l:LESSONS[4],q:"ما الخدمات التي وفّرها المماليك للحجاج على طرق الأردن؟",o:["الماء والطعام والأمن والخانات","السيارات المدرعة","العملة الورقية","الخطوط الجوية"],a:0},
+{l:LESSONS[4],q:"كيف جعل المماليك الأردن مورداً اقتصادياً؟",o:["بأن جعلوه محطة تجارية وزراعية وزوّدوا مصر بالطعام","باكتشاف الذهب","بصناعة السفن","بالتجارة البحرية فقط"],a:0},
+{l:LESSONS[4],q:"ما المعركة التي أنهت دولة المماليك وفتحت الأردن للعثمانيين؟",o:["معركة مرج دابق","معركة حطين","معركة اليرموك","معركة مؤتة"],a:0},
+{l:LESSONS[4],q:"في أي عام انتقلت الأردن إلى الحكم العثماني؟",o:["922 هـ / 1516 م","583 هـ / 1187 م","492 هـ / 1099 م","13 هـ / 634 م"],a:0}
+];
+const LETTERS=["أ","ب","ج","د"];
+const KEY="hist_u2_attempt_v1";
+const answers={};
+let locked=false,nameVal="",classVal="";
+const $=id=>document.getElementById(id);
+function pick(i,j){if(locked)return;answers[i]=j;document.querySelectorAll('#q'+i+' .opt').forEach((o,k)=>o.classList.toggle('sel',k===j));const done=Object.keys(answers).length;$("answeredN").textContent=done;$("pbar").style.width=(done/QUESTIONS.length*100)+"%";}
+window.pick=pick;
+function render(){let h="";QUESTIONS.forEach((it,i)=>{h+='<div class="q" id="q'+i+'"><div class="q-head"><div class="q-num">'+(i+1)+'</div><div class="q-body"><div class="q-text">'+it.q+'</div>'+(it.l?'<div class="q-lesson">'+it.l+'</div>':'')+'</div></div><div class="opts">';it.o.forEach((op,j)=>{h+='<div class="opt" onclick="pick('+i+','+j+')"><div class="box">'+LETTERS[j]+'</div><div class="opt-text">'+op+'</div></div>';});h+='</div></div>';});$("questions").innerHTML=h;}
+$("startBtn").onclick=()=>{nameVal=$("sName").value.trim();classVal=$("sClass").value.trim();if(!nameVal){alert("الرجاء إدخال اسم الطالب");return;}if(!classVal){alert("الرجاء إدخال الصف/الشعبة");return;}try{if(localStorage.getItem(KEY)==="done"){alert("تم تقديم محاولة على هذا الجهاز مسبقاً. يسمح بمحاولة واحدة فقط.");return;}}catch(e){}$("startCard").classList.add("hide");$("exam").classList.remove("hide");$("studentTag").textContent="👤 "+nameVal+" — "+classVal;render();window.scrollTo(0,0);};
+$("submitBtn").onclick=()=>{const done=Object.keys(answers).length;const msg=done<QUESTIONS.length?("أجبت على "+done+" من "+QUESTIONS.length+" سؤالاً. هل تريد التسليم نهائياً؟ لا يمكنك إعادة المحاولة."):"هل أنت متأكد من تسليم الامتحان؟ لا يمكنك إعادة المحاولة.";if(!confirm(msg))return;grade();};
+function grade(){locked=true;try{localStorage.setItem(KEY,"done");}catch(e){}let correct=0,wrong=0,skip=0;QUESTIONS.forEach((it,i)=>{const opts=document.querySelectorAll('#q'+i+' .opt');opts.forEach(o=>o.classList.add("locked"));opts[it.a].classList.add("correct");if(answers[i]===undefined)skip++;else if(answers[i]===it.a)correct++;else{wrong++;opts[answers[i]].classList.add("wrong");}});const score=correct*2,pct=score;const gc=$("gCircle");const col=pct>=85?"#16a34a":pct>=70?"#0d7c5b":pct>=50?"#d97706":"#dc2626";gc.style.background=col;gc.querySelector(".pct").textContent=pct;$("studentName").textContent=nameVal+" — "+classVal;$("scoreLine").textContent="إجابات صحيحة: "+correct+" من "+QUESTIONS.length+"  •  العلامة: "+score+"/100";$("cOk").textContent="✓ صحيحة: "+correct;$("cBad").textContent="✗ خاطئة: "+wrong;$("cSkip").textContent="— لم تُجب: "+skip;const v=$("verdict");let vt="ضعيف، راجع الدروس 📖",vc="#dc2626";if(pct>=90){vt="ممتاز جداً 🌟";vc="#16a34a";}else if(pct>=80){vt="جيد جداً 👏";vc="#0d7c5b";}else if(pct>=70){vt="جيد 😊";vc="#0d7c5b";}else if(pct>=50){vt="مقبول، يحتاج مراجعة 📚";vc="#d97706";}v.textContent=vt;v.style.background=vc+"22";v.style.color=vc;let rh="";QUESTIONS.forEach((it,i)=>{const ua=answers[i];const isSkip=ua===undefined;const isOk=ua===it.a;rh+='<div class="q '+(isSkip?"r-skip":isOk?"r-ok":"r-bad")+'"><div class="q-head"><div class="q-num">'+(i+1)+'</div><div class="q-body"><div class="q-text">'+it.q+'</div><div class="q-status">'+(isSkip?"— لم تُجب":isOk?"✓ صحيحة":"✗ خاطئة")+'</div></div></div><div class="opts">';it.o.forEach((op,j)=>{const cls=j===it.a?"correct":(j===ua?"wrong":"");rh+='<div class="opt locked '+cls+'"><div class="box">'+LETTERS[j]+'</div><div class="opt-text">'+op+'</div></div>';});rh+='</div></div>';});$("review").innerHTML=rh;$("exam").classList.add("hide");$("result").classList.remove("hide");window.scrollTo(0,0);}
+</script>
+</body>
+</html>
